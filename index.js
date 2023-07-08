@@ -37,6 +37,8 @@ function renderSchemes() {
         const schemeDiv = document.createElement("div");
         schemeDiv.style.backgroundColor = scheme;
         colorsWrapper.appendChild(schemeDiv);
+        schemeDiv.classList.add("color-item");
+
         const hexDiv = document.createElement("div");
         hexDiv.textContent = scheme;
         hexWrapper.appendChild(hexDiv);
