@@ -6,6 +6,11 @@ const hexWrapper = document.getElementById("hex-wrapper");
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", renderSchemes);
 
+const btnReset = document.getElementById("btn-reset");
+btnReset.addEventListener("click", function () {
+  document.getElementById("color-picker").value = "";
+});
+
 // Function to render color schemes
 function renderSchemes() {
   const form = document.querySelector("form.color-dashboard");
