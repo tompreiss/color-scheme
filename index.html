@@ -11,7 +11,17 @@
     />
     <link rel="stylesheet" href="index.css" />
 
-    <script>
+    <script defer>
+      if (window.Touchpoint) {
+        window.Touchpoint.show("1753ad81-6bd1-4683-a704-1530422fc562");
+      } else {
+        window.addEventListener("TouchpointLoaded", function () {
+          window.Touchpoint.show("1753ad81-6bd1-4683-a704-1530422fc562");
+        });
+      }
+    </script>
+
+    <!-- <script>
       window.topInit = function () {
         Touchpoint.initialize({
           // Please check documentation for other Touchpoint settings that can be configured
@@ -41,7 +51,7 @@
       async
       defer
       src="https://touchpoint-sdk.alidalabs.com/main.js"
-    ></script>
+    ></script> -->
   </head>
   <body>
     <h1>Color Scheme Gen</h1>
