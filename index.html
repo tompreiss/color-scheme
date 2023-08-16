@@ -11,17 +11,13 @@
     />
     <link rel="stylesheet" href="index.css" />
 
-    <script defer>
-      if (window.Touchpoint) {
-        window.Touchpoint.show("1753ad81-6bd1-4683-a704-1530422fc562");
-      } else {
-        window.addEventListener("TouchpointLoaded", function () {
-          window.Touchpoint.show("1753ad81-6bd1-4683-a704-1530422fc562");
-        });
-      }
-    </script>
+    <script
+      async
+      defer
+      src="https://touchpoint-sdk.alidalabs.com/main.js"
+    ></script>
 
-    <!-- <script>
+    <script>
       window.topInit = function () {
         Touchpoint.initialize({
           // Please check documentation for other Touchpoint settings that can be configured
@@ -39,10 +35,19 @@
             // role: VISITOR_ROLE,
             // etc.
           },
+          user_attributes: {
+            // Define attribute data types to be used for targeting.
+            // Dates must be in ISO 8601 format
+            // age: 'number',
+            // country: 'string',
+            // purchase_date: 'date',
+            // is_active_user: 'boolean'
+            // etc.
+          },
           publisher: {
             // Please do not make edits below
-            app_id: "LPtYa2RapmD8Eb9",
-            pod: "sit1",
+            app_id: "L3TYa9Op0Kql74z",
+            pod: "dev1",
           },
         });
       };
@@ -51,7 +56,7 @@
       async
       defer
       src="https://touchpoint-sdk.alidalabs.com/main.js"
-    ></script> -->
+    ></script>
   </head>
   <body>
     <h1>Color Scheme Gen</h1>
